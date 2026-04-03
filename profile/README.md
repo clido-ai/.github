@@ -1,52 +1,71 @@
-# cli;do
+<div align="center">
 
-An AI coding agent that runs in your terminal.
+<img src="https://raw.githubusercontent.com/clido-ai/.github/main/profile/banner.png" alt="cli;do" width="100%" />
 
-It reads your codebase, edits files, runs commands, and iterates — using any LLM you want.
+<br />
+<br />
+
+**Open-source AI coding agent for the terminal.**<br />
+Reads your codebase. Edits files. Runs commands. Uses any LLM.
+
+<br />
+
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)](https://github.com/clido-ai/clido-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/clido-ai/clido-cli/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/clido-ai/clido-cli?label=version&color=brightgreen)](https://github.com/clido-ai/clido-cli/releases)
+[![GitHub stars](https://img.shields.io/github/stars/clido-ai/clido-cli?style=flat&color=yellow)](https://github.com/clido-ai/clido-cli)
+
+<br />
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/clido-ai/clido-cli/master/scripts/install.sh | sh
 ```
 
-## What it does
+<br />
 
-clido operates directly on your repository. It can read and write files, execute shell commands, search code semantically, and chain multiple steps together to complete tasks autonomously.
+</div>
 
-It keeps persistent sessions — you can close the terminal, come back later, and pick up where you left off with full context.
+---
 
-## How it works
+<table>
+<tr>
+<td width="50%">
 
-You talk to an agent in a TUI. The agent has access to 23 built-in tools (file I/O, bash, grep, glob, semantic search, web fetch, and more). It decides what to do, asks for permission when needed, and executes.
+### 🔧 &nbsp;What it does
 
-For recurring tasks, you can define YAML workflows — multi-step plans the agent follows without manual prompting.
+- Reads and writes files across your repo
+- Runs shell commands and iterates on results
+- Semantic code search across 16+ languages
+- Persistent sessions — resume anytime
+- YAML workflows for multi-step automation
+- MCP support for external tool servers
 
-## Providers
+</td>
+<td width="50%">
 
-clido is not locked to a single API. Pick whatever model fits the task:
+### ⚡ &nbsp;What makes it different
 
-| Provider | | Provider | |
-|---|---|---|---|
-| Anthropic | Claude 3.5/4 | Groq | Llama, Mixtral |
-| OpenAI | GPT-4o/o1/o3 | Together | Open models |
-| Google | Gemini 2.5 | Fireworks | Open models |
-| DeepSeek | DeepSeek V3/R1 | Cerebras | Fast inference |
-| Mistral | Mistral Large/Codestral | Perplexity | Online models |
-| xAI | Grok | MiniMax | |
-| OpenRouter | 200+ models | Alibaba/Qwen | Qwen 2.5/3 |
-| Ollama | Local models | Kimi | Moonshot |
+- **Single binary** — one download, no runtime
+- **16 LLM providers** — not locked to one API
+- **Two-tier routing** — fast model for tools, strong model for reasoning
+- **23 built-in tools** — file I/O, bash, grep, web fetch, and more
+- **4 permission modes** — from full-auto to ask-everything
+- **Secret scanning** — built in, always on
 
-Two-tier routing lets you assign a fast, cheap model for simple tool calls (renaming, formatting) and a stronger model for reasoning — in the same session.
+</td>
+</tr>
+</table>
 
-## What makes it different
+---
 
-- **Single binary.** One download, no runtime, no package manager. Written in Rust.
-- **Provider-agnostic.** 16 providers, local models via Ollama, switch with a flag.
-- **Persistent sessions.** Resume any conversation. Context survives restarts.
-- **YAML workflows.** Declarative automation — define steps, inputs, conditions.
-- **MCP support.** Extend the agent with external tool servers.
-- **Permissioned.** Four permission modes from full-auto to ask-every-time. Secret scanning built in.
+<div align="center">
 
-## Links
+**Supported Providers**
 
-- **Repository:** [clido-ai/clido-cli](https://github.com/clido-ai/clido-cli)
-- **Documentation:** [clido-ai/docs](https://github.com/clido-ai/docs)
+Anthropic · OpenAI · Google Gemini · DeepSeek · Mistral · xAI · Groq · Together · Fireworks · Cerebras · Perplexity · MiniMax · Alibaba/Qwen · Kimi · OpenRouter · Ollama
+
+<br />
+
+[**GitHub**](https://github.com/clido-ai/clido-cli) &nbsp;·&nbsp; [**Docs**](https://github.com/clido-ai/docs) &nbsp;·&nbsp; [**Releases**](https://github.com/clido-ai/clido-cli/releases)
+
+</div>
