@@ -18,7 +18,7 @@ Reads your codebase. Edits files. Runs commands. Uses any LLM.
 <br />
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/clido-ai/clido-cli/master/scripts/install.sh | sh
+curl -fsSL https://clido.ai/install.sh | sh
 ```
 
 <br />
